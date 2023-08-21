@@ -1,22 +1,21 @@
-// document.getElementById('card-1').addEventListener('click',function(){
-//     const name=document.getElementById('card-name-1');
-//     const nameValue=name.innerText;
-//     console.log(nameValue);
+document.getElementById('card-1').addEventListener('click',function(){
+    const name=document.getElementById('card-name-1');
+    const nameValue=name.innerText;
+    console.log(nameValue);
 
-//     const card=document.getElementById('list-1')
-//     card.innerText=nameValue;
+    const card=document.getElementById('list-1')
+    const li=document.createElement('li')
+    li.innerText=nameValue;
+    card.appendChild(li)
 
-//     const price=document.getElementById('price-1');
-//     const priceValue=price.innerText;
-//     console.log(priceValue);
+    // const price=document.getElementById('price-1');
+    // const priceValue=price.innerText;
+    // console.log(priceValue);
 
-//     const cardPrice=document.getElementById('product-list-1')
-//     cardPrice.innerText=priceValue;
-
-
-
+    // const cardPrice=document.getElementById('product-list-1')
+    // cardPrice.innerText=priceValue;
     
-// })
+})
 // document.getElementById('card-2').addEventListener('click',function(){
 //     const name_1=document.getElementById('card-name-2');
 //     const name_1Value=name_1.innerText;
@@ -37,5 +36,5 @@
     
 // })
 function handleClick(target){
-    console.log(target.parentNode.childNodes[10].innerText)
+    console.log(target.parentNode.childNodes[6].innerText)
 }
