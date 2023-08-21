@@ -32,7 +32,7 @@
             <!-- card1 -->
             <h3 class="font-bold text-2xl  ">Kitchenware</h3>
            
-            <div class="card w-96 bg-base-100 shadow-xl" onclick="handleClick(this)" id="card-1">
+            <div class="card w-96 bg-base-100 shadow-xl" onclick="handleClick(this)">
                 <div class="bg-zinc-100">
                     <figure class="px-10 pt-10  ">
                         <img src="images/prod1.png" alt="Shoes" class="rounded-xl" />
@@ -46,17 +46,17 @@
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     </div>
-                    <h2 class="font-semibold" id="card-name-1">Home Cooker</h2><br>
-                    <p><span id="price-1">39.00</span> taka</p>
+                    <h2 class="font-semibold" id="card-name-1">Home Cooker</h2>
+                    <p>39.00 taka</p>
                 </div>
             </div>
-        <!-- card-2  -->
+      
 
       
-            <div class="card w-96 bg-base-100 shadow-xl" onclick="handleClick(this)" id="card-2">
+            <div class="card w-96 bg-base-100 shadow-xl" onclick="handleClick(this)">
                 <div class="bg-zinc-100">
                     <figure class="px-10 pt-10  ">
-                        <img src="images/prod1.png" alt="Shoes" class="rounded-xl" />
+                        <img src="images/prod2.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                 </div>
                 <div class="card-body items-center text-center">
@@ -68,8 +68,7 @@
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     </div>
                     <h2 class="font-semibold" id="card-name-2">Home Cooker</h2>
-                    <br>
-                    <p><span id="price-2">40.00</span> taka</p>
+                    <p>40.00 taka</p>
                 </div>
             </div>
        
@@ -78,23 +77,26 @@
             <h2 class="font-2xl">Have Coupon?</h2>
             <div class="form-control">
                 <div class="input-group">
-                    <input type="text" placeholder="Coupon Code" class="input input-bordered" />
-                    <button class="btn  text-white bg-pink-500 " disabled>
+                    <input type="text" placeholder="Coupon Code" id="input-field" class="input input-bordered" />
+                    <button class="btn  text-white bg-pink-500 " id="apply-btn" disabled>
                         Apply
                     </button>
                 </div>
             </div>
-            <div id="product-list">
+            <div >
                <ul class="list-decimal" id="list-1">
                 
                </ul>
             </div>
             <hr>
-            <div id="product-list-1">
+            <div>
                 <h3><span class="font-bold">Total Price: </span> <span id="totalPrice" class="font-md">00</span>taka</h3>
                 <h3><span class="font-bold">Discount: </span> <span id="discountPrice" class="font-md">00</span>taka</h3>
                 <h3><span class="font-bold">Total: </span><span id="grandTotal">00</span>taka</h3>
-                <button class="btn bg-pink-500 text-white font-bold" disabled>Make Purchase</button>
+                <button class="btn bg-pink-500 text-white font-bold" id="purchase-btn" disabled>
+                    Make Purchase
+
+                </button>
 
             </div>
         </div>
